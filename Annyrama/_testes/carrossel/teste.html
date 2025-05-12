@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="teste.css">
+    <!-- Swiper CSS -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+
+    <title>Serviços (SCN)</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+    
+      .infinite-carousel {
+        overflow: hidden;
+        width: 100%;
+        cursor: grab;
+        touch-action: pan-y;
+        position: relative;
+        padding: 1rem 0;
+      }
+    
+      .carousel-track {
+        display: flex;
+        gap: 1rem;
+        transition: all 0.3s;
+      }
+    
+      .carousel-item {
+        flex: 0 0 auto;
+        width: 80vw;              /* Tamanho flexível em mobile */
+        max-width: 300px;         /* Tamanho máximo em desktop */
+        height: 200px;
+        background: linear-gradient(to bottom, #fff, #eee);
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+      }
+    
+      @media (min-width: 768px) {
+        .carousel-item {
+          width: 250px;
+          height: 220px;
+          font-size: 1.4rem;
+        }
+      }
+    </style>
+    
+    
+    
+  </head>
+  <body style="background: black;">
+    <div class="infinite-carousel" id="carousel">
+      <div class="carousel-track" id="carousel-track">
+        <div class="carousel-item">🧱 Bloco 1</div>
+        <div class="carousel-item">📦 Bloco 2</div>
+        <div class="carousel-item">📘 Bloco 3</div>
+        <div class="carousel-item">🎨 Bloco 4</div>
+        <div class="carousel-item">🔧 Bloco 5</div>
+      </div>
+    </div>
+    
+    
+    <!-- Swiper JS -->
+    <script>
+      const carousel = document.getElementById("carousel");
+      const track = document.getElementById("carousel-track");
+    
+      let isDown = false;
+      let startX, scrollLeft;
+    
+      function cloneItems() {
+        const items = [...track.children];
+        const clonesBefore = items.map(item => {
+          const clone = item.cloneNode(true);
+          clone.classList.add('clone');
+          return clone;
+        });
+        const clonesAfter = items.map(item => {
+          const clone = item.cloneNode(true);
+          clone.classList.add('clone');
+          return clone;
+        });
+    
+        clonesBefore.reverse().forEach(clone => track.prepend(clone));
+        clonesAfter.forEach(clone => track.appendChild(clone));
+    
+        // Pula para o meio (depois que elementos renderizarem)
+        setTimeout(() => {
+          const itemWidth = track.children[0].offsetWidth + 16; // 16 = gap
+          const middleStart = itemWidth * clonesBefore.length;
+          carousel.scrollLeft = middleStart;
+        }, 100);
+      }
+    
+      function checkLoop() {
+        const itemWidth = track.children[0].offsetWidth + 16;
+        const totalItems = track.children.length;
+        const clonesLength = totalItems / 3;
+        const scrollLeft = carousel.scrollLeft;
+        const visibleWidth = carousel.offsetWidth;
+        const middleStart = itemWidth * clonesLength;
+        const totalScroll = itemWidth * totalItems;
+    
+        if (scrollLeft <= itemWidth) {
+          carousel.scrollLeft = middleStart + scrollLeft;
+        } else if (scrollLeft >= totalScroll - visibleWidth - itemWidth) {
+          carousel.scrollLeft = scrollLeft - middleStart;
+        }
+      }
+    
+      function setupDragging() {
+        // Mouse
+        carousel.addEventListener("mousedown", e => {
+          isDown = true;
+          startX = e.pageX;
+          scrollLeft = carousel.scrollLeft;
+        });
+    
+        carousel.addEventListener("mouseup", () => isDown = false);
+        carousel.addEventListener("mouseleave", () => isDown = false);
+    
+        carousel.addEventListener("mousemove", e => {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.pageX;
+          const walk = (x - startX) * 1.5;
+          carousel.scrollLeft = scrollLeft - walk;
+          checkLoop();
+        });
+    
+        // Touch
+        carousel.addEventListener("touchstart", e => {
+          startX = e.touches[0].pageX;
+          scrollLeft = carousel.scrollLeft;
+        });
+    
+        carousel.addEventListener("touchmove", e => {
+          const x = e.touches[0].pageX;
+          const walk = (x - startX) * 1.5;
+          carousel.scrollLeft = scrollLeft - walk;
+          checkLoop();
+        });
+      }
+    
+      cloneItems();
+      setupDragging();
+    </script>
+    
+    
+    
+    
+
+
+    
+  </body>
+</html>
+
+
+
+
+<div class="imagem-com-texto">
+  <img src="caminho/da-imagem.jpg" alt="Descrição da imagem">
+  <div class="texto-sobre-imagem">Sua frase aqui</div>
+</div>
+
+
+.imagem-com-texto {
+  position: relative;
+  display: inline-block;
+}
+
+.imagem-com-texto img {
+  width: 100%; /* ou tamanho fixo, ex: 500px */
+  display: block;
+}
+
+.texto-sobre-imagem {
+  position: absolute;
+  bottom: 10px; /* ou top, left, etc. */
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* fundo semitransparente */
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}

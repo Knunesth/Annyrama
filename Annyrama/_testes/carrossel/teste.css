@@ -1,0 +1,20 @@
+.carousel-container {
+  width: 500px; /* Ajuste o tamanho conforme necessário */
+  overflow: hidden; /* Esconde as imagens que vão para fora do contêiner */
+  position: relative; /* Para posicionamento absoluto das imagens dentro do container */
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.3s ease-in-out; /* Transição suave para a animação */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.carousel-slides img {
+  width: 100%; /* Garante que as imagens se encaixem no contêiner */
+  height: auto; /* Manutenção da proporção */
+  object-fit: cover; /* Preenche o espaço, mas não distorce a imagem */
+}

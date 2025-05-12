@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="shortcut icon" href="imgs/logo/logo-Annyrama.png" type="image/x-icon"/>
+
+    <!--links externos--> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--fim links externos--> 
+    <title>Annyrama</title>
+
+    
+</head>
+
+<body style="background: black;">
+<!--Inicio nav--> 
+<header>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">
+        <img src="imgs/logo/logo-Annyrama.png" alt="Logo" class="logo-annyrama">
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#top_novidades">Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#filmes">Filmes</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Categorias
+            </a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item bg-dark" href="#terror">Terror</a></li>
+              <li><a class="dropdown-item bg-dark" href="#romance">Romance</a></li>
+              <li><a class="dropdown-item bg-dark" href="#suspense">Suspense</a></li>
+              <li><a class="dropdown-item bg-dark" href="#comedia">Comédia</a></li>
+            </ul>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#noticias">Notícias</a>
+            </li>
+          </li>
+        </ul>
+        
+        <form class="d-flex">
+          <a href="#"><img src="imgs/icons/lupa-icon.png" class="icon-lupa btn-alerta" alt="Buscar"></a>
+          <a href="#"><img src="imgs/icons/favorito-icon.png" class="icon-fav btn-alerta" alt="Favoritos"></a>
+          <a href="#"><img class="btn-em-construcao" src="imgs/icons/person-icon.png" class="icon-user" alt="Perfil"></a>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+<!--Fim nav--> 
+
+ <!--Inicio carrosel maior-->
+<div class="main">
+    <div class="carrossel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores -->
+            <div class="carousel-indicators d-flex justify-content-center"
+                style="position: absolute; bottom: 90px; left: 35%; transform: translateX(-50%);">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+       
+          
+            <!-- Slides -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img style="box-shadow: inset 0 -60px 40px rgba(0, 0, 0, 0.4);" src="imgs/Imagens/imagem1-main.png" class="d-block w-100 img-fluid" alt="BANNER1">
+                <div class="carousel-caption text-start" style="top: 50%; left: 10%; transform: translateY(-50%); text-align: left;">
+                  <h5 style="color: white; font-size: 4rem;">Comer, correr, amar <br><span><img src="imgs/icons/class-14.png" alt=""></span></h5>
+                  <p style="color: white; font-size: 1.2rem;">Um homem termina com a mulher que ama depois que o <br> negócio da família dele vai à falência. Porém, 10 anos <br> depois, ele quer reatar o relacionamento.</p>
+                    <section class="botao-banner-main">
+                        <button><h3 class="btn-alerta"><span><img src="imgs/icons/play-icon.png" alt=""></span> Episodio 1</h3></button>
+                        <button><h3 class="btn-alerta"><span><img src="imgs/icons/plus-icon.png" alt=""></span> Minha lista</h3></button>
+                    </section>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img style="box-shadow: inset 0 -60px 40px rgba(0, 0, 0, 0.4);" src="imgs/Imagens/imagem2-main.png" class="d-block w-100" alt="BANNER2">
+                <div class="carousel-caption text-start" style="top: 50%; left: 10%; transform: translateY(-50%); text-align: left;">
+                    <h5 style="color: white; font-size: 4rem;">O palácio assombrado<br><span><img src="imgs/icons/class-14.png" alt=""></span></h5>
+                  <p style="color: white; font-size: 1.2rem;">O primeiro amor de uma jovem é possuído, e ela terá <br> que aceitar sua herança xamânica para salvá-lo <br> e ajudar o rei a colocar ordem no palácio.</p>
+                  <section class="botao-banner-main">
+                    <button><h3 class="btn-alerta"><span><img src="imgs/icons/play-icon.png" alt=""></span> Episodio 1</h3></button>
+                    <button><h3 class="btn-alerta"><span><img  src="imgs/icons/plus-icon.png" alt=""></span> Minha lista</h3></button>
+                </section>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/Imagens/imagem3-main.png" class="d-block w-100" alt="BANNER3">
+                <div class="carousel-caption text-start" style="top: 50%; left: 10%; transform: translateY(-50%); text-align: left;">
+                    <h5 style="color: white; font-size: 4rem;">Pousando no Amor
+                        <br><span><img src="imgs/icons/class-18.png" alt=""></span></h5>
+                  <p style="color: white;  font-size: 1.2rem;">Um homem termina com a mulher que ama depois que o <br> negócio da família dele vai à falência. Porém, 10 anos <br> depois, ele quer reatar o relacionamento.</p>
+                  <section class="botao-banner-main">
+                    <button><h3 class="btn-alerta"><span><img src="imgs/icons/play-icon.png" alt=""></span> Episodio 1</h3></button>
+                    <button><h3 class="btn-alerta"><span><img class="btn-alerta" src="imgs/icons/plus-icon.png" alt=""></span> Minha lista</h3></button>
+                </section>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Botão anterior -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"
+              style="top: 50%; transform: translateY(-50%); width: 50px; height: 50px;">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+          
+            <!-- Botão próximo -->
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"
+              style="top: 50%; transform: translateY(-50%); width: 50px; height: 50px;">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+    </div>
+</div>
+<!--Fim carrosel maior-->
+
+
+<!--inicio series populares-->
+<main>
+  <section style="margin-top: 39.7%;" id="top_novidades" class="carrossel-doramas">
+    <section id="top-series">
+      <h2 style="color: white; margin-left: 2%;">Top 10 séries mais assistidos</h2>
+      <div class="carrossel-series">
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/novidades/serendipidade.png');">
+            <div class="info-serie">
+              <h1>1º</h1>
+              <div class="titulo-serie">Serendipidade </div>
+              <p class="episodios">33 episódios</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/novidades/case_comigo_novamente.png');">
+            <div class="info-serie">
+              <h1>2º</h1>
+              <div class="titulo-serie">Case comigo Novamente</div>
+              <p class="episodios">31 episódios</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/novidades/o_amor_nunca_falha.png');">
+            <div class="info-serie">
+              <h1>3º</h1>
+              <div class="titulo-serie">O amor nunca falha</div>
+              <p class="episodios">24 episódios</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/novidades/cacand_o_amor.png');">
+            <div class="info-serie">
+              <h1>4º</h1>
+              <div class="titulo-serie">Caçando o amor</div>
+              <p class="episodios">54 episódios</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/novidades/rumores_reais.png');">
+            <div class="info-serie">
+              <h1>5º</h1>
+              <div class="titulo-serie">Rumores reais</div>
+              <p class="episodios">24 episódios</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/novidades/tentando_sua_queda.png');">
+            <div class="info-serie">
+              <h1>6º</h1>
+              <div class="titulo-serie">Tentando sua queda</div>
+              <p class="episodios">60 episódios</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/novidades/top-form.png');">
+            <div class="info-serie">
+              <h1>7º</h1>
+              <div class="titulo-serie">Top form</div>
+              <p class="episodios">11 episódios</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/novidades/amor_eterno.png');">
+            <div class="info-serie">
+              <h1>8º</h1>
+              <div class="titulo-serie">Amor eterno</div>
+              <p class="episodios">30 episódios</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/novidades/amor_oculto.png');">
+            <div class="info-serie">
+              <h1>9º</h1>
+              <div class="titulo-serie">Amor oculto</div>
+              <p class="episodios">19 episódios</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/novidades/mata_o_amante.png');">
+            <div class="info-serie">
+              <h1>10º</h1>
+              <div class="titulo-serie">Matar o amante</div>
+              <p class="episodios">16 episódios</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section> 
+  </section>
+</main>
+<!--Fim populares-->
+
+<!--inicio filmes-->
+<main id="filmes">
+  <section id="top_novidades" class="carrossel-doramas">
+    <section id="top-series">
+      <h2 style="color: white; margin-left: 2%;">top 10 filmes mais assistidos</h2>
+      <div class="carrossel-series">
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/Filmes/a_criada.png');">
+            <div class="info-serie">
+              <h1>1º</h1>
+              <div class="titulo-serie">A criada </div>
+              <p class="episodios">2h25m</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/Filmes/beleza_verdadeira.png');">
+            <div class="info-serie">
+              <h1>2º</h1>
+              <div class="titulo-serie">Beleza verdadeira</div>
+              <p class="episodios">3h10m</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/Filmes/chuva_de_aco.png');">
+            <div class="info-serie">
+              <h1>3º</h1>
+              <div class="titulo-serie">Chuva de aço</div>
+              <p class="episodios">2h19m</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/Filmes/decisao_de_partida.png');">
+            <div class="info-serie">
+              <h1>4º</h1>
+              <div class="titulo-serie">Decisão de partida</div>
+              <p class="episodios">2h18m</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/Filmes/oldboy.png');">
+            <div class="info-serie">
+              <h1>5º</h1>
+              <div class="titulo-serie">Oldboy</div>
+              <p class="episodios">1h40m</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/Filmes/pandora.png');">
+            <div class="info-serie">
+              <h1>6º</h1>
+              <div class="titulo-serie">Pandora</div>
+              <p class="episodios">2h16m</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/Filmes/parasite.png');">
+            <div class="info-serie">
+              <h1>7º</h1>
+              <div class="titulo-serie">Parasite</div>
+              <p class="episodios">2h</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/Filmes/amor_911.png');">
+            <div class="info-serie">
+              <h1>8º</h1>
+              <div class="titulo-serie">Amor 911</div>
+              <p class="episodios">2h10m</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+
+        <a href=""></a>
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/Filmes/rainha_das_lagrimas.png');">
+            <div class="info-serie">
+              <h1>9º</h1>
+              <div class="titulo-serie">Rainha das lágrimas</div>
+              <p class="episodios">1h30m</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="serie-card">
+          <div class="serie-imagem" style="background-image: url('imgs/Imagens/Filmes/uma_advogada_extraordinaria.png');">
+            <div class="info-serie">
+              <h1>10º</h1>
+              <div class="titulo-serie">Uma advogada extraordinária</div>
+              <p class="episodios">1h10m</p>
+              <button class="assistir-btn btn-alerta">Assistir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section> 
+  </section>
+</main>
+<!--Fim filmes-->
+
+<!--inicio noticias-->
+<main id="noticias" class="banner-noticias">
+<section class="carrossel-doramas">
+  <h2 class="carrossel-titulo"> Notícias de 2025 (っ＾▿＾)۶</h2>
+  <div class="carrossel-container">
+    <div class="carrossel-slider">
+
+      <div class="carrossel-card">
+        <img src="imgs/Imagens/banner/round_6.png" alt="Round 6">
+        <p><strong>Round 6 (3ª temporada)</strong><br>Suspense e drama em novos jogos mortais.</p>
+      </div>
+
+      <div class="carrossel-card">
+        <img src="imgs/Imagens/banner/se_a_vida_te_der_tangerinas.png" alt="Tangerinas">
+        <p><strong>Se a Vida Te Der Tangerinas</strong><br>Romance entre jovens em Jeju.</p>
+      </div>
+
+      <div class="carrossel-card">
+        <img src="imgs/Imagens/banner/um_amor_no_paraiso.png" alt="Um Amor no Paraíso">
+        <p><strong>Um Amor no Paraíso</strong><br>Superação e família após uma perda.</p>
+      </div>
+
+      <div class="carrossel-card">
+        <img src="imgs/Imagens/banner/herois_de_plantao.png" alt="Heróis de Plantão">
+        <p><strong>Heróis de Plantão</strong><br>Emoção e ação com novos protagonistas.</p>
+      </div>
+
+      <div class="carrossel-card">
+        <img src="imgs/Imagens/banner/burried_Hearts.png" alt="Burried Hearts">
+        <p><strong>Burried Hearts</strong><br>Um dos dramas asiáticos mais esperados.</p>
+      </div>
+
+      <div class="carrossel-card">
+        <img src="imgs/Imagens/banner/newtopia.png" alt="Newtopia">
+        <p><strong>Newtopia</strong><br>Suspense zumbi estrelado por Jisoo.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+<!--inicio noticias-->
+
+<!-- inicio comedia -->
+<section style="margin-top: 4%;" id="comedia">
+  <h2 style="color: white; margin-left: 2%;">Comédia</h2>
+  <div class="carrossel-series">
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/comedia/adoravel_corredora.png');">
+        <div class="info-serie">         
+          <div class="titulo-serie">Adorável corredora</div>
+          <p class="episodios">16 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/comedia/beleza_verdadeira.png');">
+        <div class="info-serie">          
+          <div class="titulo-serie">Beleza verdadeira</div>
+          <p class="episodios">16 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/comedia/familia_por_escolha.png');">
+        <div class="info-serie">         
+          <div class="titulo-serie">família por escolha</div>
+          <p class="episodios">16 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/comedia/hometown_cha_cha_cha.png');">
+        <div class="info-serie">
+          <div class="titulo-serie">Hometown cha-cha-cha</div>
+          <p class="episodios">16 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/comedia/jardim_de_meteoros.png');">
+        <div class="info-serie">         
+          <div class="titulo-serie">Jardim de meteoros</div>
+          <p class="episodios">49 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/comedia/meu_amor_das_estrelas.png');">
+        <div class="info-serie">        
+          <div class="titulo-serie">Meu amor das estrelas</div>
+          <p class="episodios">21 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/comedia/meu_mafioso_predileto.png');">
+        <div class="info-serie">         
+          <div class="titulo-serie">Meu mafioso predileto</div>
+          <p class="episodios">16 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/comedia/o_drama_da_minha_vida.png');">
+        <div class="info-serie">
+          <div class="titulo-serie">O drama da minha vida</div>
+          <p class="episodios">10 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/comedia/pretedente_surpresa.png');">
+        <div class="info-serie">          
+          <div class="titulo-serie">Pretendente surpresa</div>
+          <p class="episodios">12 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/comedia/se_rainha.png');">
+        <div class="info-serie">
+          <div class="titulo-serie">Senhora rainha</div>
+          <p class="episodios">20 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Adicione mais aqui -->
+  </div>
+</section>
+<!-- Fim comedia -->
+
+<!-- inicio suspense -->
+<section style="margin-top: 1.5%;" id="suspense">
+  <h2 style="color: white; margin-left: 2%;">Suspense</h2>
+  <div class="carrossel-series">
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/suspense/a_cobertura.png');">
+        <div class="info-serie">         
+          <div class="titulo-serie">A cobertura</div>
+          <p class="episodios">38 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/suspense/alem_do_mal.png');">
+        <div class="info-serie">          
+          <div class="titulo-serie">Além do mal</div>
+          <p class="episodios">16 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/suspense/estranho_2.png');">
+        <div class="info-serie">         
+          <div class="titulo-serie">Estranho 2</div>
+          <p class="episodios">16 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/suspense/kingdom.png');">
+        <div class="info-serie">
+          <div class="titulo-serie">Kingdom</div>
+          <p class="episodios">12 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/suspense/o_oitavo_show.png');">
+        <div class="info-serie">         
+          <div class="titulo-serie">O oitavo show</div>
+          <p class="episodios">8 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/suspense/o_que_vem_depois_do_amor.png');">
+        <div class="info-serie">        
+          <div class="titulo-serie">O que vem depois do amor</div>
+          <p class="episodios">6 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/suspense/o_sapo.png');">
+        <div class="info-serie">         
+          <div class="titulo-serie">O sapo</div>
+          <p class="episodios">8 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/suspense/rato.png');">
+        <div class="info-serie">
+          <div class="titulo-serie">Rato</div>
+          <p class="episodios">20 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/suspense/sinal.png');">
+        <div class="info-serie">          
+          <div class="titulo-serie">Sinal</div>
+          <p class="episodios">4 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/suspense/snowdrop.png');">
+        <div class="info-serie">
+          <div class="titulo-serie">Snowdrop</div>
+          <p class="episodios">15 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Fim suspense -->
+
+
+<!-- Inicio romance -->
+<section style="margin-top: 1.5%;" id="romance">
+  <h2 style="color: white; margin-left: 2%;">Romance</h2>
+  <div class="carrossel-series">
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/romance/beleza_verdadeira.png');">
+        <div class="info-serie">         
+          <div class="titulo-serie">Beleza verdadeira</div>
+          <p class="episodios">16 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/romance/descedentes_do_sol.png');">
+        <div class="info-serie">          
+          <div class="titulo-serie">Descendentes do sol</div>
+          <p class="episodios">16 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/romance/goblin_Guardian_The_Lonely_and_Great_God.png');">
+        <div class="info-serie">         
+          <div class="titulo-serie">Goblin O Solitário e Grande Deus </div>
+          <p class="episodios">19 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/romance/meu_demonio_favorito.png');">
+        <div class="info-serie">
+          <div class="titulo-serie">Meu Demônio favorito</div>
+          <p class="episodios">16 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/romance/meu_melhor_amor.avif');">
+        <div class="info-serie">         
+          <div class="titulo-serie">Meu melhor amor</div>
+          <p class="episodios">11 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/romance/posando_no_amor.png');">
+        <div class="info-serie">        
+          <div class="titulo-serie">Pousando no amor</div>
+          <p class="episodios">16 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/romance/pretedente_surpresa.png');">
+        <div class="info-serie">         
+          <div class="titulo-serie">Pretendente surpresa</div>
+          <p class="episodios">12 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/romance/sua_vida_privada.png');">
+        <div class="info-serie">
+          <div class="titulo-serie">Sua vida privada</div>
+          <p class="episodios">16 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/romance/tudo_bem_nao_ser_normal.png');">
+        <div class="info-serie">          
+          <div class="titulo-serie">Tudo bem nao ser normal</div>
+          <p class="episodios">16 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/romance/vinte_e_cindo_vinte_e_um.png');">
+        <div class="info-serie">
+          <div class="titulo-serie">Vinte e cinco Vinte e um</div>
+          <p class="episodios">16 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Fim romance -->
+
+<!--inicio terror-->
+<section style="margin-top: 1.5%;" id="terror">
+  <h2 style="color: white; margin-left: 2%;">Terror</h2>
+  <div class="carrossel-series">
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/terror/a_Criatura_de_Gyeongseong.png');">
+        <div class="info-serie">         
+          <div class="titulo-serie">A Criatura de Gyeongseong</div>
+          <p class="episodios">17 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/terror/a_noite_chegou.png');">
+        <div class="info-serie">          
+          <div class="titulo-serie">A noite chegou</div>
+          <p class="episodios">12 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/terror/felizes.png');">
+        <div class="info-serie">         
+          <div class="titulo-serie">Felicidades</div>
+          <p class="episodios">12 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/terror/goedam.png');">
+        <div class="info-serie">
+          <div class="titulo-serie">Goedam</div>
+          <p class="episodios">8 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/terror/kingdom.png');">
+        <div class="info-serie">         
+          <div class="titulo-serie">Kingdom</div>
+          <p class="episodios">12 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/terror/venda_sua_casa_assimbrada.png');">
+        <div class="info-serie">        
+          <div class="titulo-serie">Venda sua casa assombrada</div>
+          <p class="episodios">16 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/terror/o_amaldicoado.png');">
+        <div class="info-serie">         
+          <div class="titulo-serie">O amaldiçoado</div>
+          <p class="episodios">12 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/terror/o_detetive_fantasma.png');">
+        <div class="info-serie">
+          <div class="titulo-serie">O detetive fantasma</div>
+          <p class="episodios">32 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/terror/salve_me.png');">
+        <div class="info-serie">          
+          <div class="titulo-serie">Salve-me</div>
+          <p class="episodios">16 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="serie-card">
+      <div class="serie-imagem" style="background-image: url('imgs/Imagens/categorias/terror/todos_nos_estamos_mortos.png');">
+        <div class="info-serie">
+          <div class="titulo-serie">Todos nós estamos mortos</div>
+          <p class="episodios">12 episódios</p>
+          <button class="assistir-btn btn-alerta">Assistir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Fim terror-->
+
+<section id="precos" class="planos-section">
+  <h2 class="titulo-planos">Planos Annyrama</h2>
+  <div class="container-planos">
+    
+    <div class="plano">
+      <h3>Gratuito</h3>
+      <p class="preco">R$ 0/mês</p>
+      <ul>
+        <li>Acesso limitado a doramas</li>
+        <li>Exibição com anúncios</li>
+      </ul>
+      <button class="btn-plano btn-alerta">Começar</button>
+    </div>
+
+    <div class="plano">
+      <h3>Básico</h3>
+      <p class="preco">R$ 9,90/mês</p>
+      <ul>
+        <li>Catálogo completo</li>
+        <li>Menos anúncios</li>
+      </ul>
+      <button class="btn-plano btn-alerta">Assinar</button>
+    </div>
+
+    <div class="plano destaque">
+      <h3>Premium</h3>
+      <p class="preco">R$ 19,90/mês</p>
+      <ul>
+        <li>Sem anúncios</li>
+        <li>Episódios antecipados</li>
+        <li>Catálogo completo</li>
+      </ul>
+      <button class="btn-plano btn-alerta">Assinar</button>
+    </div>
+
+    <div class="plano">
+      <h3>Annyrama VIP</h3>
+      <p class="preco">R$ 29,90/mês</p>
+      <ul>
+        <li>Exclusivos e antecipados</li>
+        <li>Grupo VIP</li>
+      </ul>
+      <button class="btn-plano btn-alerta">Assinar VIP</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="sobre-nos">
+  <div class="container-sobre">
+    <h2>Sobre a Annyrama</h2>
+    <p>
+      A Annyrama foi criada com um objetivo simples: tornar o acesso aos doramas mais fácil, agradável e acessível a todos. Fundada por Kauã Thierry, um desenvolvedor brasileiro apaixonado por criar experiências digitais cativantes, a plataforma é resultado de dedicação, criatividade e uma visão clara: aproximar as pessoas dos conteúdos asiáticos de forma moderna e intuitiva.
+    </p>
+    <p>
+      Com uma interface pensada para ser prática e acessível, a Annyrama se destaca por sua navegação fluida e conteúdo selecionado. Aqui, tudo é feito com carinho, visando uma experiência de qualidade para quem deseja se conectar com as melhores histórias do universo asiático.
+    </p>
+      <button class="btn-em-construcao botao-cadastro">Cadastre-se agora</button>
+  </div>
+</section>
+
+
+
+<!--Inicio footer-->
+<footer>
+  <div id="footer_content">
+    <div id="footer_contacts">
+
+      <p>Conectando você aos principais doramas do mundo ( ͡❛ ‿‿ ͡❛).</p>
+
+      <div id="footer_social_media">
+        <a href="https://www.instagram.com/" target="_blank" class="footer-link" id="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://web.whatsapp.com/" target="_blank" class="footer-link" id="whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://x.com/home?lang=pt" target="_blank" class="footer-link" id="x-twitter">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </div>
+    </div>
+
+    <ul class="footer-list">
+      <li>
+        <h3>Informações</h3>
+      </li>
+      <li>
+        <a href="#" class="footer-link">Sobre Nós</a>
+      </li>
+      <li>
+        <a href="#" class="footer-link">Atualizações</a>
+      </li>
+    </ul>
+
+    <ul class="footer-list">
+      <li>
+        <h3>Ajuda</h3>
+      </li>
+      <li>
+        <a href="#" class="footer-link">FAQ's</a>
+      </li>
+      <li>
+        <a href="#" class="footer-link">Termos de Uso</a>
+      </li>
+      <li>
+        <a href="#" class="footer-link">Política de Privacidade</a>
+      </li>
+    </ul>
+
+    <div id="footer_subscribe">
+      <h3>Notícias</h3>
+
+      <p>
+        Insira seu e-mail para ser notificado das notícias<br />atualizadas sobre seus doramas na Annyrama.
+      </p>
+
+      <div id="input_group">
+        <input type="email" id="email" required/>
+        <button>
+          <i class="fa-regular fa-envelope"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="footer_copyright">&copy; 2025 Annyrama (Annyeong saranghae Dorama). Todos os direitos reservados.</div>
+</footer>
+<!--Fim footer-->
+
+<div class="alerta" id="alertaLogin">
+  ⚠️ Você precisa estar logado para realizar esta ação.
+</div>
+
+<div class="alerta" id="alertaConstrucao">
+  🚧 A funcionalidade de login ainda está em desenvolvimento.
+</div>
+
+<!-- inicio Scripts-->
+<script src="js/teste.js"></script>
+<script src="js/alerta.js"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+<!-- Fim Scripts-->
+</body>
+</html>
